@@ -30,7 +30,7 @@ public class BookStore {
 		boolean isFound = false;
 		for(int i=0; i<books.size(); i++) {
 			if(books.get(i).getTitle().equals(title)) {
-				System.out.println("Book found");
+				System.out.println("Book found with the title : "+title);
 				System.out.println("Book Id : " + books.get(i).getBookId());
 				System.out.println("Tittle : " + books.get(i).getTitle());
 				System.out.println("Author : " + books.get(i).getAuthor());
@@ -51,7 +51,7 @@ public class BookStore {
 		boolean isFound = false;
 		for(int i=0; i<books.size(); i++) {
 			if(books.get(i).getAuthor().equals(author)) {
-				System.out.println("Book found");
+				System.out.println("Book found with the author " + author);
 				System.out.println("Book Id : " + books.get(i).getBookId());
 				System.out.println("Tittle : " + books.get(i).getTitle());
 				System.out.println("Author : " + books.get(i).getAuthor());
