@@ -28,13 +28,19 @@ public class BookStore {
 	public void searchByTitle(String title) { // search method to search using the book title
 		Iterator<Book> itr = books.iterator();
 		boolean isFound = false;
-		while(itr.hasNext()) {
-			if(itr.next().getTitle().equals(title)) {
-				System.out.println("Book Found");
-				System.out.println(itr.next());
+		for(int i=0; i<books.size(); i++) {
+			if(books.get(i).getTitle().equals(title)) {
+				System.out.println("Book found");
+				System.out.println("Book Id : " + books.get(i).getBookId());
+				System.out.println("Tittle : " + books.get(i).getTitle());
+				System.out.println("Author : " + books.get(i).getAuthor());
+				System.out.println("Category : " + books.get(i).getCategory());
+				System.out.println("Price : " + books.get(i).getPrice());
+				System.out.println();
 				isFound = true;
 			}
 		}
+		
 		if(!isFound) {
 			System.out.println("Book Not Found!");
 		}
@@ -43,13 +49,19 @@ public class BookStore {
 	public void searchByAuthor(String author) { // search method to search using the book title
 		Iterator<Book> itr = books.iterator();
 		boolean isFound = false;
-		while(itr.hasNext()) {
-			if(itr.next().getAuthor().equals(author)) {
-				System.out.println("Book Found");
-				System.out.println(itr.next());
+		for(int i=0; i<books.size(); i++) {
+			if(books.get(i).getTitle().equals(author)) {
+				System.out.println("Book found");
+				System.out.println("Book Id : " + books.get(i).getBookId());
+				System.out.println("Tittle : " + books.get(i).getTitle());
+				System.out.println("Author : " + books.get(i).getAuthor());
+				System.out.println("Category : " + books.get(i).getCategory());
+				System.out.println("Price : " + books.get(i).getPrice());
+				System.out.println();
 				isFound = true;
 			}
 		}
+		
 		if(!isFound) {
 			System.out.println("Book Not Found!");
 		}
