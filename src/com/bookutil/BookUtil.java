@@ -1,4 +1,12 @@
 package com.bookutil;
+/**
+ * @author : Natanim
+ *
+ * @date : Feb 1, 2023
+ * 
+ * @Description : A class that contain the main method and calls to the BookStore class 
+ * 
+ */
 
 import com.book.Book;
 import com.book.BookStore;

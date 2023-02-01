@@ -29,7 +29,7 @@ public class BookStore {
 		Iterator<Book> itr = books.iterator();
 		boolean isFound = false;
 		while(itr.hasNext()) {
-			if(itr.next().getTitle() == title) {
+			if(itr.next().getTitle().equals(title)) {
 				System.out.println("Book Found");
 				System.out.println(itr.next());
 				isFound = true;
@@ -44,7 +44,7 @@ public class BookStore {
 		Iterator<Book> itr = books.iterator();
 		boolean isFound = false;
 		while(itr.hasNext()) {
-			if(itr.next().getAuthor() == author) {
+			if(itr.next().getAuthor().equals(author)) {
 				System.out.println("Book Found");
 				System.out.println(itr.next());
 				isFound = true;
