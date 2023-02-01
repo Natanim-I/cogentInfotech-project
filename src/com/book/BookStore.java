@@ -50,7 +50,7 @@ public class BookStore {
 		Iterator<Book> itr = books.iterator();
 		boolean isFound = false;
 		for(int i=0; i<books.size(); i++) {
-			if(books.get(i).getTitle().equals(author)) {
+			if(books.get(i).getAuthor().equals(author)) {
 				System.out.println("Book found");
 				System.out.println("Book Id : " + books.get(i).getBookId());
 				System.out.println("Tittle : " + books.get(i).getTitle());
